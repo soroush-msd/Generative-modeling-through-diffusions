@@ -49,24 +49,13 @@ This repository contains all the code, experiments, and animations accompanying 
 
 Demonstrates that the Fisher divergence $L(\theta)$ and the score matching objective $J(\theta)$ differ only by a constant, confirming Hyvärinen (2005). The empirical estimator $\hat{J}(\theta)$ converges to the true variance as sample size grows.
 
-<table align="center">
-  <tr>
-    <td style="border: none">
-      <img src="./assets/example1/j_hat_sampling_variability_N10.jpg" width="300">
-    </td>
-    <td style="border: none">
-      <img src="./assets/example1/j_hat_sampling_variability_N50.jpg" width="300">
-    </td>
-  </tr>
-  <tr>
-    <td style="border: none">
-      <img src="./assets/example1/j_hat_sampling_variability_N100.jpg" width="300">
-    </td>
-    <td style="border: none">
-      <img src="./assets/example1/j_hat_sampling_variability_N500.jpg" width="300">
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="./assets/example1/j_hat_sampling_variability_N10.jpg" width="300">
+  <img src="./assets/example1/j_hat_sampling_variability_N50.jpg" width="300">
+  <br>
+  <img src="./assets/example1/j_hat_sampling_variability_N100.jpg" width="300">
+  <img src="./assets/example1/j_hat_sampling_variability_N500.jpg" width="300">
+</div>
 
 <p align="center">
   <em>Figure 2. Behavior of the objective functions and their sample-based estimates across different sample sizes.</em>
@@ -81,24 +70,13 @@ Demonstrates that the Fisher divergence $L(\theta)$ and the score matching objec
 
 Extends Example 1 to jointly estimate both the mean and variance of a normal distribution. 3D surface plots of $\hat{J}(\mu, \sigma^2)$ show convergence to the true parameters.
 
-<table align="center">
-  <tr>
-    <td style="border: none">
-      <img src="./assets/example2/loss_surface_Jhat_N10.jpg" width="300">
-    </td>
-    <td style="border: none">
-      <img src="./assets/example2/loss_surface_Jhat_N50.jpg" width="300">
-    </td>
-  </tr>
-  <tr>
-    <td style="border: none">
-      <img src="./assets/example2/loss_surface_Jhat_N100.jpg" width="300">
-    </td>
-    <td style="border: none">
-      <img src="./assets/example2/loss_surface_Jhat_N500.jpg" width="300">
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="./assets/example2/loss_surface_Jhat_N10.jpg" width="300">
+  <img src="./assets/example2/loss_surface_Jhat_N50.jpg" width="300">
+  <br>
+  <img src="./assets/example2/loss_surface_Jhat_N100.jpg" width="300">
+  <img src="./assets/example2/loss_surface_Jhat_N500.jpg" width="300">
+</div>
 
 <p align="center">
   <em>Figure 3. Sample-based estimator surfaces for joint estimation of the mean and variance across increasing sample sizes.</em>
@@ -129,16 +107,11 @@ Visualizes how Langevin dynamics generates samples from a 2D mixture of three Ga
 
 Trains an MLP (6 hidden layers, 1024 units, softplus activation) to learn the score function of an oval-shaped distribution via **explicit score matching**. Demonstrates that score estimates are accurate in high-density regions but unreliable in low-density areas.
 
-<table align="center">
-  <tr>
-    <td style="border: none">
-      <img src="./assets/example4/angular_error_heatmap.jpg" width="339">
-    </td>
-    <td style="border: none">
-      <img src="./assets/example4/error_magnitude_heatmap.jpg" width="325">
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="./assets/example4/angular_error_heatmap.jpg" width="327">
+  <img src="./assets/example4/error_magnitude_heatmap.jpg" width="314">
+</div>
+
 <p align="center">
   <em>
     Figure 5. Error analysis of the learned score field: angular error (left) and magnitude error (right), with contours indicating the underlying data density.
@@ -146,9 +119,9 @@ Trains an MLP (6 hidden layers, 1024 units, softplus activation) to learn the sc
 </p>
 
 <div align="center">
-  <img src="./assets/example4/langevin_high_density_ring.gif" width="300">
-  <img src="./assets/example4/langevin_low_density_center.gif" width="300">
-  <img src="./assets/example4/langevin_outer_low_density.gif" width="300">
+  <img src="./assets/example4/langevin_high_density_ring.gif" width="280">
+  <img src="./assets/example4/langevin_low_density_center.gif" width="280">
+  <img src="./assets/example4/langevin_outer_low_density.gif" width="280">
 </div>
 
 <p align="center">
@@ -165,30 +138,15 @@ Trains an MLP (6 hidden layers, 1024 units, softplus activation) to learn the sc
 
 Uses **denoising score matching** with multiple noise levels to address the limitations of the naive approach. Trains the same MLP architecture with a geometric noise schedule ($L = 20$ levels). Generates samples via **annealed Langevin dynamics**.
 
-<table align="center">
-  <tr>
-    <td align="center" style="border: none">
-      <img src="./assets/example5/ncsn_error_magnitude_high_noise.jpg" width="310">
-    </td>
-    <td align="center" style="border: none">
-      <img src="./assets/example5/ncsn_error_magnitude_medium_noise.jpg" width="290">
-    </td>
-    <td align="center" style="border: none">
-      <img src="./assets/example5/ncsn_error_magnitude_low_noise.jpg" width="300">
-    </td>
-  </tr>
-  <tr>
-    <td align="center" style="border: none">
-      <img src="./assets/example5/ncsn_angular_error_high_noise.jpg" width="300">
-    </td>
-    <td align="center" style="border: none">
-      <img src="./assets/example5/ncsn_angular_error_medium_noise.jpg" width="300">
-    </td>
-    <td align="center" style="border: none">
-      <img src="./assets/example5/ncsn_angular_error_low_noise.jpg" width="300">
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="./assets/example5/ncsn_error_magnitude_high_noise.jpg" width="300">
+  <img src="./assets/example5/ncsn_error_magnitude_medium_noise.jpg" width="288">
+  <img src="./assets/example5/ncsn_error_magnitude_low_noise.jpg" width="294">
+  <br>
+  <img src="./assets/example5/ncsn_angular_error_high_noise.jpg" width="295">
+  <img src="./assets/example5/ncsn_angular_error_medium_noise.jpg" width="295">
+  <img src="./assets/example5/ncsn_angular_error_low_noise.jpg" width="295">
+</div>
 
 <p align="center">
   <em>
@@ -227,65 +185,36 @@ Trains a U-Net on 28×28 grayscale sketches from the [Quick, Draw!](https://gith
 |:---:|:---:|
 | Diverse, varied samples | Collapsed to modal shapes |
 
-<table align="center" width="100%" cellspacing="0" cellpadding="0" border="0">
-  <tr>
-    <td align="center" valign="top" width="50%">
-      <img src="./assets/experiment/tree/tree1.jpg" width="95%"><br>
-      <img src="./assets/experiment/tree/tree2.jpg" width="95%"><br>
-      <img src="./assets/experiment/tree/tree3.jpg" width="95%"><br>
-      <img src="./assets/experiment/tree/tree4.jpg" width="95%"><br>
-      <img src="./assets/experiment/tree/tree5.jpg" width="95%">
-    </td>
-    <td align="center" valign="top" width="50%">
-      <img src="./assets/experiment/tree/tree_nonoise1.jpg" width="95%"><br>
-      <img src="./assets/experiment/tree/tree_nonoise2.jpg" width="95%"><br>
-      <img src="./assets/experiment/tree/tree_nonoise3.jpg" width="95%"><br>
-      <img src="./assets/experiment/tree/tree_nonoise4.jpg" width="95%"><br>
-      <img src="./assets/experiment/tree/tree_nonoise5.jpg" width="95%">
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="./assets/experiment/tree/tree1.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/tree/tree_nonoise1.jpg" width="35%"><br>
+  <img src="./assets/experiment/tree/tree2.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/tree/tree_nonoise2.jpg" width="35%"><br>
+  <img src="./assets/experiment/tree/tree3.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/tree/tree_nonoise3.jpg" width="35%"><br>
+  <img src="./assets/experiment/tree/tree4.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/tree/tree_nonoise4.jpg" width="35%"><br>
+  <img src="./assets/experiment/tree/tree5.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/tree/tree_nonoise5.jpg" width="35%">
+</div>
 
-<table align="center" width="100%" cellspacing="0" cellpadding="0" border="0">
-  <tr>
-    <td align="center" valign="top" width="50%">
-      <img src="./assets/experiment/car/car1.jpg" width="95%"><br>
-      <img src="./assets/experiment/car/car2.jpg" width="95%"><br>
-      <img src="./assets/experiment/car/car3.jpg" width="95%"><br>
-      <img src="./assets/experiment/car/car4.jpg" width="95%"><br>
-      <img src="./assets/experiment/car/car5.jpg" width="95%">
-    </td>
-    <td align="center" valign="top" width="50%">
-      <img src="./assets/experiment/car/car_nonoise1.jpg" width="95%"><br>
-      <img src="./assets/experiment/car/car_nonoise2.jpg" width="95%"><br>
-      <img src="./assets/experiment/car/car_nonoise3.jpg" width="95%"><br>
-      <img src="./assets/experiment/car/car_nonoise4.jpg" width="95%"><br>
-      <img src="./assets/experiment/car/car_nonoise5.jpg" width="95%">
-    </td>
-  </tr>
-</table>
+<br>
 
-<table align="center" width="100%" cellspacing="0" cellpadding="0" border="0">
-  <tr>
-    <td align="center" valign="top" width="50%">
-      <img src="./assets/experiment/octopus/octo1.jpg" width="95%"><br>
-      <img src="./assets/experiment/octopus/octo2.jpg" width="95%"><br>
-      <img src="./assets/experiment/octopus/octo3.jpg" width="95%"><br>
-      <img src="./assets/experiment/octopus/octo4.jpg" width="95%"><br>
-      <img src="./assets/experiment/octopus/octo5.jpg" width="95%">
-    </td>
-    <td align="center" valign="top" width="50%">
-      <img src="./assets/experiment/octopus/octo_nonoise1.jpg" width="95%"><br>
-      <img src="./assets/experiment/octopus/octo_nonoise2.jpg" width="95%"><br>
-      <img src="./assets/experiment/octopus/octo_nonoise3.jpg" width="95%"><br>
-      <img src="./assets/experiment/octopus/octo_nonoise4.jpg" width="95%"><br>
-      <img src="./assets/experiment/octopus/octo_nonoise5.jpg" width="95%">
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="./assets/experiment/car/car1.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/car/car_nonoise1.jpg" width="35%"><br>
+  <img src="./assets/experiment/car/car2.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/car/car_nonoise2.jpg" width="35%"><br>
+  <img src="./assets/experiment/car/car3.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/car/car_nonoise3.jpg" width="35%"><br>
+  <img src="./assets/experiment/car/car4.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/car/car_nonoise4.jpg" width="35%"><br>
+  <img src="./assets/experiment/car/car5.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/car/car_nonoise5.jpg" width="35%">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/experiment/octopus/octo1.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/octopus/octo_nonoise1.jpg" width="35%"><br>
+  <img src="./assets/experiment/octopus/octo2.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/octopus/octo_nonoise2.jpg" width="35%"><br>
+  <img src="./assets/experiment/octopus/octo3.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/octopus/octo_nonoise3.jpg" width="35%"><br>
+  <img src="./assets/experiment/octopus/octo4.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/octopus/octo_nonoise4.jpg" width="35%"><br>
+  <img src="./assets/experiment/octopus/octo5.jpg" width="35%">&nbsp;&nbsp;&nbsp;<img src="./assets/experiment/octopus/octo_nonoise5.jpg" width="35%">
+</div>
 
 <p align="center">
-  <em>Figure 10. Denoising process across the tree, car, and octopus datasets. Left: sampling with added Gaussian noise; right: without. Each progresses from pure noise to a clean sample over 1,000 iterations (rows are independent samples).</em>
+  <em>Figure 10. Denoising process across the tree, car, and octopus datasets. Left: sampling with added Gaussian noise; right: without. Each row progresses from pure noise to a clean sample over 1,000 iterations (rows are independent samples).</em>
 </p>
 
 <div align="center">
