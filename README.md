@@ -119,9 +119,9 @@ Trains an MLP (6 hidden layers, 1024 units, softplus activation) to learn the sc
 </p>
 
 <div align="center">
-  <img src="./assets/example4/langevin_high_density_ring.gif" width="280">
-  <img src="./assets/example4/langevin_low_density_center.gif" width="280">
-  <img src="./assets/example4/langevin_outer_low_density.gif" width="280">
+  <img src="./assets/example4/langevin_high_density_ring.gif" width="270">
+  <img src="./assets/example4/langevin_low_density_center.gif" width="270">
+  <img src="./assets/example4/langevin_outer_low_density.gif" width="270">
 </div>
 
 <p align="center">
