@@ -218,9 +218,9 @@ Trains a U-Net on 28×28 grayscale sketches from the [Quick, Draw!](https://gith
 </p>
 
 <div align="center">
-  <img src="./assets/experiment/real-samples/tree_dataset_samples.jpg" width="277.5">
-  <img src="./assets/experiment/real-samples/car_dataset_samples.jpg" width="277.5">
-  <img src="./assets/experiment/real-samples/octopus_dataset_samples.jpg" width="277.5">
+  <img src="./assets/experiment/real-samples/tree_dataset_samples.jpg" width="275">
+  <img src="./assets/experiment/real-samples/car_dataset_samples.jpg" width="275">
+  <img src="./assets/experiment/real-samples/octopus_dataset_samples.jpg" width="275">
 </div>
 
 <p align="center">
