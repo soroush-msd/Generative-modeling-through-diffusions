@@ -139,13 +139,13 @@ Trains an MLP (6 hidden layers, 1024 units, softplus activation) to learn the sc
 Uses **denoising score matching** with multiple noise levels to address the limitations of the naive approach. Trains the same MLP architecture with a geometric noise schedule ($L = 20$ levels). Generates samples via **annealed Langevin dynamics**.
 
 <div align="center">
-  <img src="./assets/example5/ncsn_error_magnitude_high_noise.jpg" width="300">
-  <img src="./assets/example5/ncsn_error_magnitude_medium_noise.jpg" width="288">
-  <img src="./assets/example5/ncsn_error_magnitude_low_noise.jpg" width="294">
+  <img src="./assets/example5/ncsn_error_magnitude_high_noise.jpg" width="296">
+  <img src="./assets/example5/ncsn_error_magnitude_medium_noise.jpg" width="284">
+  <img src="./assets/example5/ncsn_error_magnitude_low_noise.jpg" width="290">
   <br>
-  <img src="./assets/example5/ncsn_angular_error_high_noise.jpg" width="295">
-  <img src="./assets/example5/ncsn_angular_error_medium_noise.jpg" width="295">
-  <img src="./assets/example5/ncsn_angular_error_low_noise.jpg" width="295">
+  <img src="./assets/example5/ncsn_angular_error_high_noise.jpg" width="291">
+  <img src="./assets/example5/ncsn_angular_error_medium_noise.jpg" width="291">
+  <img src="./assets/example5/ncsn_angular_error_low_noise.jpg" width="291">
 </div>
 
 <p align="center">
